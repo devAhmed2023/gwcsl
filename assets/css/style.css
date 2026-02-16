@@ -1,0 +1,420 @@
+@font-face {
+    font-family: cairoFont;
+    src: url('../fonts/Cairo/Cairo-VariableFont_slnt\,wght.ttf');
+}
+@font-face {
+    font-family: amiriFont;
+    src: url('../fonts/Amiri/Amiri-Regular.ttf');
+}
+@font-face {
+    font-family: tajawalFont;
+    src: url('../fonts/Tajawal/Tajawal-Regular.ttf');
+}
+@font-face {
+    font-family: notoFont;
+    src: url('../fonts/Noto_Sans_Arabic/NotoSansArabic-VariableFont_wdth\,wght.ttf');
+}
+@font-face {
+    font-family: kufiFont;
+    src: url('../fonts/Reem_Kufi/ReemKufi-VariableFont_wght.ttf');
+}
+
+:root {
+    --color-dark-blue: #0D1B2A;
+    --color-mid-blue: #1B263B;
+    --color-blue-light: #415A77;
+    --color-purple: #4B0082;
+    --color-gold: #FFD700;
+    --color-gold-dark: #CCAC00;
+    --color-white: #FFFFFF;
+    --color-light-gray: #E0E0E0
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: cairoFont, sans-serif;
+    background-color: var(--color-dark-blue);
+    color: var(--color-white);
+    direction: rtl;
+    text-align: right;
+    padding-top: 60px;
+}
+
+section {
+    scroll-margin-top: 100px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+h1, h2, h3 {
+    font-family: amiriFont, serif;
+    color: var(--color-gold);
+}
+
+.btn {
+    background-color: var(--color-gold);
+    color: var(--color-dark-blue);
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    font-family: tajawalFont, sans-serif;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: var(--color-gold-dark);
+    color: var(--color-white);
+}
+
+.navbar-expand-lg {
+    background-color: var(--color-dark-blue);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+header .logo img {
+    max-height: 60px;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: var(--color-white);
+    text-decoration: none;
+    font-family: tajawalFont, sans-serif;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+header nav ul li a:hover {
+    color: var(--color-gold);
+}
+
+footer {
+    background-color: var(--color-mid-blue);
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 5px 0;
+    font-family: tajawalFont, sans-serif;
+    color: var(--color-white);
+}
+
+#offers {
+    padding: 60px 20px;
+    background-color: var(--color-blue-light);
+    text-align: center;
+}
+
+#offers h2 {
+    font-family: amiriFont, serif;
+    font-size: 32px;
+    color: var(--color-white);
+    margin-bottom: 40px;
+}
+
+#offers .offer-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.offer-card {
+    background-color: var(--color-light-gray);
+    color: var(--color-dark-blue);
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 400px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.offer-card h3 {
+    font-family: kufiFont, sans-serif;
+    font-size: 22px;
+    color: var(--color-mid-blue);
+    margin-bottom: 10px;
+}
+
+.offer-card p {
+    font-family: tajawalFont, sans-serif;
+    font-size: 16px;
+    color: var(--color-dark-blue);
+}
+
+.offer-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+
+#services h2 {
+    font-family: amiriFont, serif;
+    font-size: 32px;
+    color: var(--color-white);
+    margin-bottom: 40px;
+}
+
+.service-card {
+    background-color: var(--color-light-gray);
+    color: var(--color-dark-blue);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-card i {
+    color: var(--color-gold-dark);
+}
+
+.service-card h3 {
+    font-family: kufiFont, sans-serif;
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: var(--color-purple);
+}
+
+.service-card p {
+    font-family: tajawalFont, sans-serif;
+    font-size: 16px;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+
+#portfolios {
+    background-color: var(--color-blue-light);
+    text-align: center;
+}
+
+#portfolios h2 {
+    font-family: amiriFont, serif;
+    font-size: 32px;
+    color: var(--color-white);
+    margin-bottom: 40px;
+}
+
+.protfolio-card {
+    background-color: var(--color-mid-blue);
+    color: var(--color-dark-blue);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.protfolio-card img {
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.protfolio-card h3 {
+    font-family: kufiFont, sans-serif;
+    font-size: 18px;
+    color: var(--color-white);
+}
+
+.protfolio-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+
+.protfolio-card:hover img {
+    transform: scale(1.05);
+}
+
+#pricing h2 {
+    font-family: amiriFont, serif;
+    font-size: 32px;
+    color: var(--color-white);
+    margin-bottom: 40px;
+}
+
+.pricing-card {
+    background-color: var(--color-light-gray);
+    color: var(--color-dark-blue);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.pricing-card h3 {
+    font-family: kufiFont, sans-serif;
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: var(--color-purple);
+}
+
+.pricing-card .price {
+    font-size: 26px;
+    font-weight: bold;
+    background-color: var(--color-mid-blue);
+    color: var(--color-gold);
+    padding: 10px;
+    margin: 15px 0;
+}
+
+.pricing-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+}
+
+.pricing-card ul li {
+    font-family: tajawalFont, sans-serif;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.pricing-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+
+.pricing-card.featured {
+    border: 2px solid var(--color-gold);
+    transform: scale(1.05);
+}
+
+#about {
+    background-color: var(--color-blue-light);
+    text-align: center;
+}
+
+#about .logo img {
+    max-width: 250px;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+}
+
+#about .logo img:hover {
+    transform: scale(1.1);
+}
+
+#about h2 {
+    font-family: amiriFont, serif;
+    font-size: 32px;
+    color: var(--color-white);
+    margin-bottom: 40px;
+}
+
+#about p.lead {
+    font-family: tajawalFont, sans-serif;
+    font-size: 18px;
+    color: var(--color-dark-blue);
+    margin-bottom: 40px;
+}
+
+.about-card {
+    background-color: var(--color-mid-blue);
+    color: var(--color-dark-blue);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.about-card i {
+    color: var(--color-light-gray);
+}
+
+.about-card h3 {
+    font-family: kufiFont, sans-serif;
+    font-size: 18px;
+    color: var(--color-gold);
+}
+
+.about-card p {
+    font-family: tajawalFont, sans-serif;
+    font-size: 16px;
+    color: var(--color-white);
+}
+
+.about-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+
+
+
+#newsletter h2 {
+    font-family: amiriFont, serif;
+    font-size: 32px;
+    color: var(--color-gold);
+    margin-bottom: 40px;
+}
+
+#newsletter p.lead {
+    font-family: tajawalFont, sans-serif;
+    font-size: 18px;
+    color: var(--color-blue-light);
+    margin-bottom: 40px;
+}
+
+.newsletter-form input { border-radius: 8px; padding: 12px; font-family: 'Tajawal', sans-serif; font-size: 16px; }
+
+.newsletter-form button { background-color: var(--color-gold); color: var(--color-dark-blue); border-radius: 8px; padding: 12px 20px; font-family: 'Reem Kufi', sans-serif; font-weight: bold; transition: 0.3s; }
+
+.newsletter-form button:hover { background-color: var(--color-gold-dark); color: var(--color-white); }
+
+
+
+#contact {
+    background-color: var(--color-blue-light);
+    text-align: center;
+}
+
+#contact h2 {
+    font-family: amiriFont, serif;
+    font-size: 32px;
+    color: var(--color-white);
+    margin-bottom: 40px;
+}
+
+#contact p.lead {
+    font-family: tajawalFont, sans-serif;
+    font-size: 18px;
+    color: var(--color-dark-blue);
+    margin-bottom: 40px;
+}
+
+.contact-form input, .contact-form textarea { border-radius: 8px; padding: 12px; font-family: 'Tajawal', sans-serif; font-size: 16px; background-color: var(--color-light-gray); color: var(--color-dark-blue); transition: 0.3s; }
+
+.contact-form input:focus, .contact-form textarea:focus { box-shadow: 0 0 8px var(--color-gold); }
+
+.contact-form button { background-color: var(--color-gold); color: var(--color-dark-blue); border-radius: 8px; padding: 12px 20px; font-family: 'Reem Kufi', sans-serif; font-weight: bold; transition: 0.3s; }
+
+.contact-form button:hover { background-color: var(--color-gold-dark); color: var(--color-white); }
+
+.contact-info p { font-family: 'Tajawal', sans-serif; font-size: 16px; color: var(--color-dark-blue); }

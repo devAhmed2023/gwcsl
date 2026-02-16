@@ -1,0 +1,40 @@
+.banner {
+    background: linear-gradient(180deg, var(--color-dark-blue), var(--color-mid-blue));
+    text-align: center;
+    padding: 50px 20px 100px;
+    position: relative;
+}
+
+.banner h1 {
+    font-family: amiriFont, serif;
+    font-size: 48px;
+    color: var(--color-gold);
+}
+
+.banner p {
+    font-family: tajawalFont, sans-serif;
+    font-size: 20px;
+    color: var(--color-white);
+}
+
+.banner::before {
+    content: '';
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    width: 60px;
+    height: 60px;
+    background: url("../images/icons/mosque.png") no-repeat center;
+    background-size: contain;
+}
+
+.banner::after {
+    content: '';
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background: url("../images/icons/moon.png") no-repeat center;
+    background-size: contain;
+}
